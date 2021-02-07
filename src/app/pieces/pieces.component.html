@@ -1,0 +1,6 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <div class="content_img" fxLayout="row" fxLayoutAlign="space-around center" *ngFor="let piece of pieces">
+    <img fxFlex="300px" src="../assets/{{ piece }}.png" (click)="go(piece)">
+    <div fxFlex="300px" fxLayoutAlign="center center">Order</div>
+  </div>
+</div>

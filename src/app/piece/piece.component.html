@@ -1,0 +1,30 @@
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
+  <div fxFlex>
+    <img src="../../assets/{{ piece }}.png" style="width: 300px">
+  </div>
+  <div fxFlex fxLayout="column" style="width: 300px">
+    <div class="price">$45</div>
+    <mat-form-field>
+      <mat-label>Your name</mat-label>
+      <input matInput [(ngModel)]="name">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Your email</mat-label>
+      <input matInput [(ngModel)]="email">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Frame color</mat-label>
+      <mat-select [(ngModel)]="frameColor">
+        <mat-option *ngFor="let color of colors" [value]="color.value">{{ color.viewValue }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Background color</mat-label>
+      <mat-select [(ngModel)]="bgColor">
+        <mat-option *ngFor="let color of colors" [value]="color.value">{{ color.viewValue }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div fxLayoutAlign="center center" (click)="order()" style="color: rgb(140,0,0); cursor: pointer; height: 50px;">Order</div>
+  </div>
+  <div style="height: 400px"></div>
+</div>

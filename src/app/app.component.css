@@ -1,0 +1,22 @@
+@font-face {
+  font-family: AnglicanText;
+  src: url('AnglicanText.ttf');
+}
+
+.title {
+  font-size: 45px;
+  font-family: AnglicanText;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .title:hover {
+    color: rgb(140, 0, 0);
+  }
+}
+
+.sub-title {
+  font-family: AnglicanText;
+  font-size: 20px;
+  margin-top: -20px;
+}

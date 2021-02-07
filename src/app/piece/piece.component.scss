@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+}
+
+::ng-deep .mat-form-field {
+  .mat-input-element {
+    color: black;
+  }
+  .mat-form-field-label {
+    color: black;
+
+  }
+  .mat-form-field-underline {
+      background-color: black;
+
+  }
+  .mat-form-field-ripple {
+    background-color: rgb(140,0,0) !important;
+
+  }
+  .mat-form-field-required-marker {
+    color: black;
+  }
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+  color: rgb(140,0,0) !important;
+}
+
+.price {
+  margin-top: 20px;
+}
+
+button {
+  color: rgb(140,0,0);
+}
+
+::ng-deep .mat-selected {
+  color: white !important;
+  background-color: rgb(140, 0, 0) !important;
+}
+
+::ng-deep .mat-select-value-text {
+  color: black !important;
+}
+
+::ng-deep .mat-checkbox-inner-container {
+  border: 1px solid black !important;
+}
+
+.gradient {
+  margin-left: 20px;
+}
+
+button {
+  margin-bottom: 20px;
+}
